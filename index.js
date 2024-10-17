@@ -2,8 +2,8 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const app = express();
-const brand_names = require('./TW_Master_json');
-const fourW_brand_names = require('./4W_Master_json');
+// const brand_names = require('./TW_Master_json');
+// const fourW_brand_names = require('./4W_Master_json');
 
 app.use(express.json()); // For parsing JSON request body
 app.use(express.urlencoded({ extended: true }));
