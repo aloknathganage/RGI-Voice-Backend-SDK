@@ -31,13 +31,13 @@ app.post('/get-token',(req,res)=>{
     res.send({"jwt":token});
 })
 
-app.get('/tw-brands', (req,res)=>{
-    res.json(brand_names)
-});
+// app.get('/tw-brands', (req,res)=>{
+//     res.json(brand_names)
+// });
 
-app.get('/fw-brands', (req,res)=>{
-    res.json(fourW_brand_names)
-})
+// app.get('/fw-brands', (req,res)=>{
+//     res.json(fourW_brand_names)
+// })
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
