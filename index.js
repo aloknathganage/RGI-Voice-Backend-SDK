@@ -29,15 +29,10 @@ app.post('/get-token',(req,res)=>{
     }
       var token = jwt.sign(options, clientSecret);
     res.send({"jwt":token});
+  console.log("token":token);
 })
 
-// app.get('/tw-brands', (req,res)=>{
-//     res.json(brand_names)
-// });
 
-// app.get('/fw-brands', (req,res)=>{
-//     res.json(fourW_brand_names)
-// })
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
