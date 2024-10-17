@@ -28,7 +28,7 @@ app.post('/get-token',(req,res)=>{
     }
       var token = jwt.sign(options, clientSecret);
     res.send({"jwt":token});
-  console.log("token":token);
+  console.log("token:",token);
 })
 
 
